@@ -44,6 +44,7 @@ keploy-assignment/
 ├── app.js
 ├── package.json
 └── README.md
+```
 
 ---
 
@@ -51,13 +52,7 @@ keploy-assignment/
 ```bash
 npm install
 node server.js
-
----
-
-## Config Environment Variable:
-```bash
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
+```
 
 ---
 
