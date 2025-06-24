@@ -32,6 +32,17 @@ exports.createTask = async (req, res) => {
     }
 };
 
+// CREATE task
+exports.createTask = async (req, res) => {
+    try {
+        const task = await Task.create(req.body); 
+        res.status(201).json(task);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
+
+
 // UPDATE task
 exports.updateTask = async (req, res) => {
     try {
